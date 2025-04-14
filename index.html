@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3d Cube Model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- backdrop -->
+    <div class="background-glow"></div>
+
+    <!-- face-view -->
+    <div class="viewer">
+      <input type="radio" name="view" id="front" />
+      <input type="radio" name="view" id="back" />
+      <input type="radio" name="view" id="left" />
+      <input type="radio" name="view" id="right" />
+      <input type="radio" name="view" id="top" />
+      <input type="radio" name="view" id="bottom" />
+    </div>
+
+    <!-- face view controls -->
+    <div class="controls">
+      <label for="front">Front view</label>
+      <label for="front">Back view</label>
+      <label for="front">Left side</label>
+      <label for="front">Right side</label>
+      <label for="front">Top Down</label>
+      <label for="front">Bottom up</label>
+    </div>
+
+    <!-- Scene -->
+    <div class="scene">
+      <!-- front -->
+      <div class="cube-face front" data-tooltip="Main Item View">
+        Front Perspective <span>Product Image</span>
+      </div>
+
+      <!-- back -->
+      <div class="cube-face back" data-tooltip="Technical Specifications">
+        Back Panel <span>Detail & Specs</span>
+      </div>
+
+      <!-- right -->
+      <div class="cube-face right" data-tooltip="Side Components">
+        Right Side <span>Connection Ports</span>
+      </div>
+
+      <!-- left -->
+      <div class="cube-face left" data-tooltip="Feature Highlights">
+        Left Side <span>Control Interface</span>
+      </div>
+
+      <!-- top -->
+      <div class="cube-face top" data-tooltip="Top Overview">
+        Top View <span>Cooling System</span>
+      </div>
+
+      <!-- bottom -->
+      <div class="cube-face bottom" data-tooltip="Base Details">
+        Bottom View <span>Mounting Points</span>
+      </div>
+    </div>
+
+    <!-- dot indicators -->
+
+    <div class="dot-indicators">
+      <label for="front"></label>
+      <label for="back"></label>
+      <label for="left"></label>
+      <label for="right"></label>
+      <label for="top"></label>
+      <label for="bottom"></label>
+    </div>
+  </body>
+</html>
